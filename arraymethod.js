@@ -81,3 +81,24 @@ let nestedArr = [1, [2, 3], [4, 5]];
 console.log("Original Nested Array:", nestedArr);
 console.log("flat :", nestedArr.flat());
 
+
+//array destructuring
+let array = [10, 20, 30, 40, 50];
+const [a, b, c, d] = array;
+console.log("a:", a);
+console.log("b:", b);
+console.log("c:", c);
+console.log("d:", d);
+
+let array1 = [1, 2, 3, 4, 5];
+const [x, , y] = array1;
+console.log("x:", x);
+console.log("y:", y);
+
+//Rest operator in array destructuring
+
+const num1 = [1 , 2, 3, 4, 5];
+const [p, q, ...rest] = num1;
+console.log("p:", p);
+console.log("q:", q);
+console.log("rest:", rest);
